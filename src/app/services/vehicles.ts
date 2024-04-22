@@ -4,4 +4,5 @@ export class vehicle{
     vehicleCompany:any;
     vehiclePriceperhour:any;
     vehicleImage:any;
+    vehicleEdit:any;
 }

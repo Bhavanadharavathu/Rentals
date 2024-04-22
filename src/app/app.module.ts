@@ -8,10 +8,12 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { CarComponent } from './car/car.component';
-import { AutoComponent } from './auto/auto.component';
 import { BikesComponent } from './bikes/bikes.component';
 import { AddvehiclesComponent } from './addvehicles/addvehicles.component';
 import { FormsModule } from '@angular/forms';
+import { ManageComponent } from './manage/manage.component';
+import { AboutComponent } from './about/about.component';
+import { BookNowComponent } from './book-now/book-now.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,11 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     CarComponent,
-    AutoComponent,
     BikesComponent,
-    AddvehiclesComponent
+    AddvehiclesComponent,
+    ManageComponent,
+    AboutComponent,
+    BookNowComponent
   ],
   imports: [
     BrowserModule,

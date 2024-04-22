@@ -1,1 +1,25 @@
-<p>car works!</p>
+<div class="container-fluid" >
+    <div class="row">
+        <ng-container *ngFor="let v of vehicles">
+            <div class="col-md-4" *ngIf="v.vehicleName=='cars'">
+                <div class="card">
+                    <div class="card-header">
+                        <img [src]="v.vehicleImage" class="card-img-top">
+                        
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">{{v.vehicleCompany}}</h4>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <h6>{{v.vehicleId}}</h6>
+                        <h6>{{v.vehicleName}}</h6>
+                        <h6>{{v.vehiclePriceperhour}}</h6>
+
+                        <button class="btn btn-warning" (click)="bookNow(v.vehicleId)" routerLink="/user/booknow">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="vehicle.vehicleImage" class="card-img-top"> 
+            </div>
+            <div class="col-md-6"> 
+            <h3 class="card-title">{{vehicle.vehicleCompany}}</h3><br>
+            <h3>Id: {{vehicle.vehicleId}}</h3>
+            <h3>Name: {{vehicle.vehicleName}}</h3>
+            <h3>Price: {{vehicle.vehiclePriceperhour}}</h3><br>
+
+<div class="booking-form-container">
+    <h4>Book Your Vehicle</h4>
+    
+    <form (ngSubmit)="submitBookingForm()">
+      <div class="form-group">
+       <h6> <label for="pickupLocation">Pickup Location: </label></h6>
+        <select id="pickupLocation" name="pickupLocation" [(ngModel)]="pickupLocation">
+          <option value="location1">Madeenaguda</option>
+          <option value="location2">Miyapur</option>
+          <option value="location3">Chandanagar</option>
+          <option value="location4">Begumpet</option>
+          <option value="location5">Madhapur</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+    <h6><label for="dropOffLocation">Drop-off Location: </label></h6>
+        <select id="dropOffLocation" name="dropOffLocation" [(ngModel)]="dropOffLocation">
+          <option value="location1">Ameerpet</option>
+          <option value="location2">Banjara hills</option>
+          <option value="location3">Bowenpally</option>
+          <option value="location4">Secunderabad</option>
+          <option value="location5">Gachibowli</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+    <h6><label for="pickupDateTime">Pickup Date and Time: </label></h6>
+        <input type="datetime-local" id="pickupDateTime" name="pickupDateTime" [(ngModel)]="pickupDateTime">
+      </div>
+      <br>
+      <button class="btn btn-primary" type="submit" (click)="onSubmit()">Book Now</button>
+    </form>
+  </div>
+  
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+</div>

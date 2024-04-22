@@ -1,0 +1,48 @@
+
+
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-container h2 {
+    color: #333;
+  }
+  
+  .home-container p {
+    line-height: 1.6;
+  }
+@keyframes glitter {
+  0% { text-shadow: none; }
+  50% { text-shadow: 0 0 10px yellow, 0 0 20px orange; }
+  100% { text-shadow: none; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.carousel-item{
+  height: 600px;
+}
+.carousel-caption.animated.slideInDown {
+  animation: slideInDown 4s ease;
+  height: 570px;
+  color:blanchedalmond;
+}
+
+.carousel-caption.animated.glitter {
+  animation:reverse;
+  height: 500px;
+  color: black;
+  margin-left:-700px;
+  
+}
+
+.carousel-caption.animated.marquee {
+  animation: marquee 10s linear infinite;
+  height: 500px;
+  color: black;
+}

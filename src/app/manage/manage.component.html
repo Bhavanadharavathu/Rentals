@@ -1,0 +1,27 @@
+<div class="row">
+<div class="col-md-5"  *ngFor="let v of vehicles" >
+   <div class="card">
+    <div class="card-header">
+        <img [src]="v.vehicleImage" class="card-img-top">
+    </div>
+    <div class="card-body" *ngIf="!v.vehicleEdit">
+        <h4 class="card-title">{{v.vehicleName}}
+        </h4>
+        <p class="card-text">Company:{{v.vehicleCompany}}</p>
+        <p class="card-text">Price:{{v.vehiclePriceperhour}}</p>
+    </div>
+    <div class="card-body" *ngIf="v.vehicleEdit">
+        <input type="text" name="v" [(ngModel)]="v.vehicleImage">
+        <input type="text" name="v"[(ngModel)]="v.vehicleName">
+        <input type="text" name="v"[(ngModel)]="v.vehicleCompany">
+        <input type="text" name="v"[(ngModel)]="v.vehiclePriceperhour">
+    </div>
+    <br>
+    <div>
+        <button class="btn btn-warning" *ngIf="!v.vehicleEdit"(click)="toupdate(v)">Edit</button>&nbsp;
+        <button class="btn btn-primary" *ngIf="v.vehicleEdit" (click)="tosave(v)">Save</button>
+        <button class="btn btn-danger" (click)="delete(v)">Delete</button>
+    </div>
+   </div>
+    </div>
+</div>

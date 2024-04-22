@@ -1,0 +1,36 @@
+
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-container h2 {
+    color: #333;
+  }
+  
+  .about-container p {
+    line-height: 1.6;
+  }
+  
+  .about-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-container ul li {
+    margin-bottom: 5px;
+  }
+  .center-align{
+    text-align: center;
+    font-weight: bold;
+  }
+  .abt{
+    text-align: center;
+    font-weight: bold;
+    color: coral;
+  }
+  .back{
+    background-color:lightgray;
+  }
